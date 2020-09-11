@@ -10,20 +10,27 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
     <style>
-        body{
-            overflow-x:hidden;
-        }
       .col-4{
           padding:1%;
       }
       h3{
           text-align: center;
       }
+      body{
+           overflow-x: hidden;
+       }
    </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+        <div class="container">
+          <a class="navbar-brand" href="gallery.html">
+                <img src="data:image/jpeg;base64,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 " width="30%" alt="">
+              </a>
+              <h1 style="Color:white;">KMIT EVENING</h1>
+      </nav>
   <div>
-    <h3>KMIT EVENING - <span style="color:orange;font-weight: 900;">2019</span></h3>
+    <h3 style="padding:1%;">KMIT EVENING - <span style="color:orange;font-weight: 900;">2019</span></h3>
 </div>
     <div class="row">
         <div class="col-sm-4"><img src="https://i.ytimg.com/vi/WPerBsGNZqY/maxresdefault.jpg" width="500px" height="250px"></div>
@@ -31,7 +38,7 @@
         <div class="col-sm-4"><img src="https://i.ytimg.com/vi/SBynA4GhnkM/hqdefault.jpg" width="500px" height="250px"></div>
     </div>
     <div>
-      <h3>KMIT EVENING - <span style="color:green;font-weight: 900;">2018</span></h3>
+      <h3 style="padding:1%;">KMIT EVENING - <span style="color:green;font-weight: 900;">2018</span></h3>
   </div>
     <div class="row">
         <div class="col-sm-4"><img src="https://i.ytimg.com/vi/lC236ZwV7L8/hqdefault.jpg" width="500px" height="250px"></div>
@@ -39,7 +46,7 @@
         <div class="col-sm-4"><img src="https://i.ytimg.com/vi/YM_jTfonp2M/maxresdefault.jpg" width="500px" height="250px"></div>
     </div>
     <div>
-      <h3>KMIT EVENING - <span style="color:blue;font-weight: 900;">2017</span></h3>
+      <h3 style="padding:1%;">KMIT EVENING - <span style="color:blue;font-weight: 900;">2017</span></h3>
   </div>
     <div class="row">
         <div class="col-sm-4"><img src="https://kmit.in/emagazine/wp-content/uploads/2018/02/Picture4-291x300.png" width="500px" height="250px"></div>
