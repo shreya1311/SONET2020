@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <style>
+        .input{
+            margin:3%;
+            width:50%;
+        }
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+       
+    </style>
+
+
+</head>
+<body style="overflow-x: hidden;" >
+
+    <div>
+    <div class="header" style="text-align: center;background-color: bisque;text-shadow:2px 5px blue ;color:white;">
+        <h1 style="padding:2%;display:block;">Contact Us</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-7">
+            <img src="images/hyderabad/indiaimage.jpg">
+        </div>
+        <div class="col-sm-5" style="text-align: center;">
+
+        <form id="myForm" class="pure-form">
+        <label for="FirstName">FirstName:</label><input class="input" type="text" placeholder=" FirstName" id="FirstName">
+        <br>
+        <label for="LastName">LastName:</label><input  class="input" type="text" placeholder=" LastName" id="LastName">
+        <br>
+        <label for="Email_Id">Email Id:</label><input class="input" type="email" placeholder=" Email Id" id="Email_Id">
+        <br>
+        <h5 style="padding:2%;">Type Your Message Here:</h5>
+        <textarea id="Textarea" rows="10" cols="55" placeholder="   Enter within 150 words......."></textarea>
+        <br>
+        <button class="btn btn-primary" type="submit" >Submit</button>
+    </form>
+</div>
+</div>
+
+</div>
+
+
+<script>
+
+var nameInput=document.getElementById('FirstName');
+var name1Input1=document.getElementById('LastName');
+var name2Input2=document.getElementById('Email_Id');
+var name3Input3=document.getElementById('Textarea');
+
+document.querySelector('form.pure-form').addEventListener('submit',function(e){
+    e.preventDefault();
+    console.log(nameInput.value);
+    console.log(name1Input1.value);
+    console.log(name2Input2.value);
+    console.log(name3Input3.value);
+});
+
+</script>
+
+</body>
+</html>
