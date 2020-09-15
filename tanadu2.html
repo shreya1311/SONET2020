@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+
+    <style>
+      .container {
+        position: relative;
+        width: 50%;
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+  
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color:#cccccc;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+      }
+      
+      
+      .container:hover .overlay {
+        height: 100%;
+      }
+      
+      .text {
+        color:#008CBA;
+        font-weight: bold;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      body{
+        overflow-x: hidden;
+      }
+      .card-text{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 5px hotpink;
+      }
+      </style>
+
+
+
+  </head>
+<body>
+    <nav class="navbar navbar-expand-lg  navbar-light">
+        <a class="navbar-brand" href="eventgallery2.html">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTs5GnDRGywzL0hWeGiXKBtwMOQp_eD_E-08Q&usqp=CAU" width="100" height="30" class="d-inline-block align-top" alt="">
+          INDIA
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="eventgallery2.html">Home
+                    <span class="sr-only">(current)</span>
+                  </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hyd2.html">Hyderabad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mumb2.html">Mumbai</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="del2.html">Delhi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="tanadu2.html">TamilNadu</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      
+
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-5">Welcome To TamilNadu</h1>
+          <p class="lead" style="float:right;">-Enjoy And Explore Its Diversity</p>
+        </div>
+      </div>
+
+
+      <div class="row bg-dark" style="padding:2%;">
+          <div class="col-6">
+            <div class="card" style="width:45rem;background-color: #ececec;">
+              <div class="container">
+                <img src="images/tamilnadu/Dhanushkodi.jpg"  class="card-img-top" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Dhanushkodi</div>
+                </div>
+              </div>
+              <div class="card-body">
+                <p class="card-text">Dhanushkodi</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card" style="width:45rem;background-color: #ececec;">
+              <div class="container">
+                <img src="images/tamilnadu/Hogenakkal.jpg" class="card-img-top" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">Hogenakkal</div>
+                </div>
+              </div>
+                <div class="card-body">
+                  <p class="card-text">Hogenakkal</p>
+                </div>
+            </div>
+</div>
+
+
+<div class="row" style="padding:1%;">
+  <div class="col-6">
+    <div class="card" style="width:45rem;background-color: #ececec;">
+      <div class="container">
+        <img src="images/tamilnadu/Pondicherry.jpg"  class="card-img-top" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Pondicherry</div>
+        </div>
+      </div>
+        <div class="card-body">
+          <p class="card-text">Pondicherry</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card" style="width:45rem; background-color: #ececec;">
+      <div class="container">
+        <img src="images/tamilnadu/Tranquebar.jpg" class="card-img-top" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Tranquebar</div>
+        </div>
+      </div>
+        <div class="card-body">
+          <p class="card-text">Tranquebar</p>
+        </div>
+    </div>
+</div>
+
+<div class="row" style="padding:1%;">
+  <div class="col-6">
+    <div class="card" style="width:45rem;background-color: #ececec;">
+      <div class="container">
+        <img src="images/tamilnadu/Trichy.jpg"  class="card-img-top" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Trichy</div>
+        </div>
+      </div>
+        <div class="card-body">
+          <p class="card-text">Trichy</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card" style="width:45rem;background-color: #ececec;">
+      <div class="container">
+        <img src="images/tamilnadu/Vellore.jpg" class="card-img-top" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Vellore</div>
+        </div>
+      </div>
+        <div class="card-body">
+          <p class="card-text">Vellore</p>
+        </div>
+    </div>
+</div>
+
+
+
+        
+            
+    
+      
+</body>
+</html>
