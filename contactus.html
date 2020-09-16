@@ -31,7 +31,7 @@
     </div>
 
     <div class="row">
-        <div class="col-sm-7">
+        <div class="col-7">
             <img src="images/hyderabad/indiaimage.jpg">
         </div>
         <div class="col-sm-5" style="text-align: center;">
@@ -46,7 +46,7 @@
         <h5 style="padding:2%;">Type Your Message Here:</h5>
         <textarea id="Textarea" rows="10" cols="55" placeholder="   Enter within 150 words......."></textarea>
         <br>
-        <button class="btn btn-primary" type="submit" >Submit</button>
+        <button class="btn btn-primary" type="submit" onclick="show_Alert()" >Submit</button>
     </form>
 </div>
 </div>
@@ -56,6 +56,9 @@
 
 <script>
 
+function show_Alert(){
+    alert("your query has benn successfully submitted!!");
+}
 var nameInput=document.getElementById('FirstName');
 var name1Input1=document.getElementById('LastName');
 var name2Input2=document.getElementById('Email_Id');
@@ -63,10 +66,10 @@ var name3Input3=document.getElementById('Textarea');
 
 document.querySelector('form.pure-form').addEventListener('submit',function(e){
     e.preventDefault();
-    console.log(nameInput.value);
-    console.log(name1Input1.value);
-    console.log(name2Input2.value);
-    console.log(name3Input3.value);
+    console.log("First Name:"+nameInput.value);
+    console.log("Last Nmae:"+name1Input1.value);
+    console.log("Email_Id:"+name2Input2.value);
+    console.log("Message:"+name3Input3.value);
 
     nameInput.value="";
     name1Input1.value="";
